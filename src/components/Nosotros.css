@@ -1,0 +1,124 @@
+.nosotros {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3a1f1b;
+    line-height: 1.6;
+}
+
+.equipo,
+.historia,
+.valores {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.historia h2,
+.valores h2,
+.equipo h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a2c2a;
+    border-bottom: 2px solid #e0c097;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.historia p,
+.valores ul {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valores li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 25px;
+}
+
+.valores li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.miembro-card {
+    background-color: #fffdf7;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.miembro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.miembro-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #e0c097;
+}
+
+.miembro-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.miembro-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .nosotros {
+        padding: 30px 15px;
+    }
+
+    .historia p,
+    .valores ul {
+        font-size: 1rem;
+    }
+
+    .miembro-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .miembro-card h3 {
+        font-size: 1rem;
+    }
+
+    .miembro-card p {
+        font-size: 0.9rem;
+    }
+}
+
+.descripcion-miembro {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.4;
+}
